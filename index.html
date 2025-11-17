@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo Responsivo</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1rem; /* unidad relativa */
+            line-height: 1.5;
+            padding: 2rem;
+        }
+
+        header, footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* rejilla fluida */
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        section {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        img {
+            width: 100%; /* imagen flexible */
+            height: auto;
+            border-radius: 0.5rem;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header, footer {
+                padding: 0.5rem;
+            }
+
+            main {
+                gap: 0.5rem;
+            }
+
+            section {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hola Mundo Responsivo</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sección 1</h2>
+            <p>Este es un ejemplo de contenido adaptable en rejillas fluidas.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Ejemplo imagen">
+        </section>
+
+        <section>
+            <h2>Sección 2</h2>
+            <p>Las unidades relativas permiten que el contenido se ajuste a cualquier pantalla.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Ejemplo imagen">
+        </section>
+
+        <section>
+            <h2>Sección 3</h2>
+            <p>Las media queries cambian el estilo según el tamaño de la pantalla.</p>
+            <img src="https://via.placeholder.com/400x200" alt="Ejemplo imagen">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Hola Mundo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
